@@ -7,7 +7,7 @@ import {
 import { MainTemplate } from "templates";
 
 import {
-  AccauntPage,
+  AccountPage,
   BoockDetailsPage,
   CartPage,
   FavoritePage,
@@ -22,12 +22,12 @@ import { ROUTE } from "./routes";
 
 export const AppRouter = createBrowserRouter(
   createRoutesFromElements(
-    <Routes>
+    <>
       <Route path={ROUTE.HOME} element={<MainTemplate />}>
         <Route index element={<HomePage />} />
         <Route index path={ROUTE.SEARCH} element={<SearchPage />} />
         <Route index path={ROUTE.BOOK_DETAILS} element={<BoockDetailsPage />} />
-        <Route index path={ROUTE.ACCOUNT} element={<AccauntPage />} />
+        <Route index path={ROUTE.ACCOUNT} element={<AccountPage />} />
         <Route index path={ROUTE.CART} element={<CartPage />} />
         <Route index path={ROUTE.FAVORITES} element={<FavoritePage />} />
         <Route index path={ROUTE.REGISTRATION} element={<RegistrationPage />} />
@@ -39,6 +39,6 @@ export const AppRouter = createBrowserRouter(
         />
         <Route index path={ROUTE.NOT_FOUND} element={<NotFoundPage />} />
       </Route>
-    </Routes>
+    </>
   )
 );

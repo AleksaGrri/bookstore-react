@@ -1,4 +1,4 @@
-import { AccauntPage } from "./AccountPage";
+import { AccountPage } from "./AccountPage";
 import { BoockDetailsPage } from "./BoockDetailsPage";
 import { CartPage } from "./CartPage";
 import { FavoritePage } from "./FavoritePage";
@@ -10,7 +10,7 @@ import { SearchPage } from "./SearchPage";
 import { SigInPage } from "./SigInPage";
 
 export {
-  AccauntPage,
+  AccountPage,
   BoockDetailsPage,
   CartPage,
   FavoritePage,

@@ -1,3 +1,3 @@
-import { AccauntPage } from "./AccauntPage";
+import { AccountPage } from "./AccountPage";
 
-export { AccauntPage };
+export { AccountPage };

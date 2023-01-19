@@ -8,6 +8,8 @@ export const StyledFooter = styled.footer`
   flex-shrink: 0;
   max-width: 1200px;
   margin-top: ${Space.ExtraLarge};
+  margin-left: 64px;
+  margin-right: 64px;
   border-top: 1px solid ${Color.Gray};
 
   @media (max-width: 800px) {

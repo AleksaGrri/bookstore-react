@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 const H1 = css`
-  font-family: "Bebas Neue";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 46px;
@@ -13,7 +13,7 @@ const H1 = css`
 `;
 
 const H2 = css`
-  font-family: "Bebas Neue";
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 60px;
@@ -24,7 +24,7 @@ const H2 = css`
 `;
 
 const H3 = css`
-  font-family: "Bebas Neue";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;

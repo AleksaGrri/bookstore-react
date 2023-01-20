@@ -50,3 +50,10 @@ export type NewBooks = {
   error: null | string;
   isLoading: boolean;
 };
+
+export type BookDetails = {
+  book: IBookDetails;
+  error: null | string;
+  isLoading: boolean;
+  amount: number | null;
+};

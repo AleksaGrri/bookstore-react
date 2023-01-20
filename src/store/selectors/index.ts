@@ -1,2 +1,3 @@
 import { getNewBooks } from "./newBooksSelector";
-export { getNewBooks };
+import { getBookDetails } from "./bookDetailsSelector";
+export { getNewBooks, getBookDetails };

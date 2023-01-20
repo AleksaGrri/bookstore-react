@@ -1,2 +1,3 @@
 import { fetchNewBooks } from "./newBooksSlice";
-export { fetchNewBooks };
+import { fetchDetailsBook } from "./bookDetailsSlice";
+export { fetchNewBooks, fetchDetailsBook };

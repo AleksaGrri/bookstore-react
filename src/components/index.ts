@@ -13,6 +13,10 @@ import { BooksList } from "./BooksList";
 import { ErrorMessage } from "./ErrorMessage";
 import { Loader } from "./Loader";
 import { Subscribe } from "./Subscribe/Subscribe";
+import { Raiting } from "./Raiting";
+import { BookDetails } from "./BookDetails";
+import { TabBar } from "./TabBar/TabBar";
+import { SliderCom } from "./Slider";
 
 export {
   Account,
@@ -24,10 +28,14 @@ export {
   Search,
   TogglerTheme,
   RightNav,
+  SliderCom,
+  TabBar,
+  BookDetails,
   Title,
   BookItem,
   BooksList,
   ErrorMessage,
   Subscribe,
+  Raiting,
   Loader,
 };

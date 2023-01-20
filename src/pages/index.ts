@@ -1,5 +1,5 @@
 import { AccountPage } from "./AccountPage";
-import { BoockDetailsPage } from "./BoockDetailsPage";
+import { BookDetailsPage } from "./BookDetailsPage";
 import { CartPage } from "./CartPage";
 import { FavoritePage } from "./FavoritePage";
 import { HomePage } from "./HomePage";
@@ -11,7 +11,7 @@ import { SigInPage } from "./SigInPage";
 
 export {
   AccountPage,
-  BoockDetailsPage,
+  BookDetailsPage,
   CartPage,
   FavoritePage,
   HomePage,

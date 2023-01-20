@@ -8,7 +8,7 @@ import { MainTemplate } from "templates";
 
 import {
   AccountPage,
-  BoockDetailsPage,
+  BookDetailsPage,
   CartPage,
   FavoritePage,
   HomePage,
@@ -26,7 +26,7 @@ export const AppRouter = createBrowserRouter(
       <Route path={ROUTE.HOME} element={<MainTemplate />}>
         <Route index element={<HomePage />} />
         <Route index path={ROUTE.SEARCH} element={<SearchPage />} />
-        <Route index path={ROUTE.BOOK_DETAILS} element={<BoockDetailsPage />} />
+        <Route index path={ROUTE.BOOK_DETAILS} element={<BookDetailsPage />} />
         <Route index path={ROUTE.ACCOUNT} element={<AccountPage />} />
         <Route index path={ROUTE.CART} element={<CartPage />} />
         <Route index path={ROUTE.FAVORITES} element={<FavoritePage />} />

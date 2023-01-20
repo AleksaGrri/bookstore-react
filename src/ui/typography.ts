@@ -5,6 +5,7 @@ const H1 = css`
   font-style: normal;
   font-weight: 500;
   font-size: 46px;
+  text-transform: uppercase;
   line-height: 64px;
   @media (max-width: 568px) {
     font-size: 32px;

@@ -6,7 +6,6 @@ export const StyledFooter = styled.footer`
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  max-width: 1200px;
   margin-top: ${Space.ExtraLarge};
   margin-left: 64px;
   margin-right: 64px;

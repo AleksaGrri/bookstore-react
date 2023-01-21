@@ -122,7 +122,7 @@ export const BookDetails = ({
               <ButtonContainer>
                 <Button>Add to Cart</Button>
                 <ButtonAddFavorite onClick={addFavorite}>
-                  {isFavorite ? "Add to favorites" : "Delete from favorites"}
+                  {isFavorite ? "Delete from favorites" : "Add to favorites"}
                 </ButtonAddFavorite>
               </ButtonContainer>
             </Description>

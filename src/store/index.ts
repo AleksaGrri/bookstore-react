@@ -8,6 +8,10 @@ import { fetchDetailsBook } from "./slices";
 import { getBookDetails } from "./selectors";
 
 import { getFavorites } from "./selectors";
+import { getCart } from "./selectors";
+import { clearCart } from "./slices";
+
+import { removeItem } from "./slices";
 
 export {
   getNewBooks,
@@ -17,6 +21,9 @@ export {
   getBookDetails,
   fetchDetailsBook,
   addItemFavorites,
+  removeItem,
   getFavorites,
+  getCart,
+  clearCart,
 };
 export type { AppDispatch, RootState };

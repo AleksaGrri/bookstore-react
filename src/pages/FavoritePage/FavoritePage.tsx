@@ -19,7 +19,7 @@ export const FavoritesPage = () => {
           <Title>
             You don't have favorite books, please add from the store
           </Title>
-          <img src={FavoritesImage} alt="" />
+          <img src={FavoritesImage} alt="favorite" />
         </StyledTitleFavorites>
       )}
     </>

@@ -18,6 +18,7 @@ import { BookDetails } from "./BookDetails";
 import { TabBar } from "./TabBar/TabBar";
 import { SliderCom } from "./Slider";
 import { FavoritesItem } from "./FavoritesItem";
+import { Cart } from "./Cart";
 
 export {
   Account,
@@ -40,4 +41,5 @@ export {
   Raiting,
   Loader,
   FavoritesItem,
+  Cart,
 };

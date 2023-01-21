@@ -1,7 +1,7 @@
 import { HiArrowSmDown, HiArrowSmUp } from "react-icons/hi";
 import { ArrowBack, ErrorMessage, Loader, Raiting, Title } from "components";
 import { useToggle } from "hooks";
-import { getFavorites, useAppDispatch, useAppSelector } from "store";
+import { getFavorites, useAppDispatch, useAppSelector, getCart } from "store";
 import { IBookDetails } from "types";
 import { addItemFavorites } from "store";
 import {
@@ -23,6 +23,7 @@ import {
   LinkLabelText,
   ButtonAddFavorite,
 } from "./style";
+import { addItem, removeItem } from "store/slices/cartSlice";
 
 interface IProps {
   isLoading: boolean;
@@ -44,10 +45,29 @@ export const BookDetails = ({
   const addFavorite = () => {
     dispatch(addItemFavorites(book));
   };
+
+  const addCart = () => {
+    dispatch(addItem(book));
+  };
+
+  const removeCart = () => {
+    dispatch(removeItem(book));
+  };
+
+  const toggleCartItem = () => {
+    isCart ? removeCart() : addCart();
+  };
+
   const { item } = useAppSelector(getFavorites);
+
+  const { cart } = useAppSelector(getCart);
 
   const isFavorite = Boolean(
     item.find((bookFav) => book.isbn13 === bookFav.isbn13)
+  );
+
+  const isCart = Boolean(
+    cart.find((bookCart) => book.isbn13 === bookCart.isbn13)
   );
 
   return (
@@ -120,7 +140,9 @@ export const BookDetails = ({
                 )}
               </Options>
               <ButtonContainer>
-                <Button>Add to Cart</Button>
+                <Button onClick={toggleCartItem}>
+                  {isCart ? "Delete from cart" : "Add to cart"}
+                </Button>
                 <ButtonAddFavorite onClick={addFavorite}>
                   {isFavorite ? "Delete from favorites" : "Add to favorites"}
                 </ButtonAddFavorite>

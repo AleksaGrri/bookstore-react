@@ -1,4 +1,13 @@
 import { fetchNewBooks } from "./newBooksSlice";
 import { fetchDetailsBook } from "./bookDetailsSlice";
 import { addItemFavorites } from "./favoritesSlice";
-export { fetchNewBooks, fetchDetailsBook, addItemFavorites };
+import { clearCart } from "./cartSlice";
+import { removeItem } from "./cartSlice";
+
+export {
+  fetchNewBooks,
+  fetchDetailsBook,
+  addItemFavorites,
+  clearCart,
+  removeItem,
+};

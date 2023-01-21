@@ -7,6 +7,7 @@ import { ReactComponent as UserHeaderIcon } from "./icons/userHeader.svg";
 import { ReactComponent as ArrowLeft } from "./icons/arrowLeft.svg";
 
 import FavoritesImage from "./images/favor.png";
+import EmptyCartIcon from "./images/empty-cart.png";
 
 export {
   BookstoreIcon,
@@ -17,4 +18,5 @@ export {
   UserHeaderIcon,
   ArrowLeft,
   FavoritesImage,
+  EmptyCartIcon,
 };

@@ -1,2 +1,2 @@
-import { FavoritePage } from "./FavoritePage";
-export { FavoritePage };
+import { FavoritesPage } from "./FavoritePage";
+export { FavoritesPage };

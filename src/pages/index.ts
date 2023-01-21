@@ -1,7 +1,7 @@
 import { AccountPage } from "./AccountPage";
 import { BookDetailsPage } from "./BookDetailsPage";
 import { CartPage } from "./CartPage";
-import { FavoritePage } from "./FavoritePage";
+import { FavoritesPage } from "./FavoritePage";
 import { HomePage } from "./HomePage";
 import { NotFoundPage } from "./NotFoundPage";
 import { RegistrationPage } from "./RegistrationPage";
@@ -13,7 +13,7 @@ export {
   AccountPage,
   BookDetailsPage,
   CartPage,
-  FavoritePage,
+  FavoritesPage,
   HomePage,
   NotFoundPage,
   RegistrationPage,

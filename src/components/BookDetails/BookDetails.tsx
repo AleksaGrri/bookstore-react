@@ -1,8 +1,9 @@
 import { HiArrowSmDown, HiArrowSmUp } from "react-icons/hi";
 import { ArrowBack, ErrorMessage, Loader, Raiting, Title } from "components";
 import { useToggle } from "hooks";
-import { useAppDispatch } from "store";
+import { getFavorites, useAppDispatch, useAppSelector } from "store";
 import { IBookDetails } from "types";
+import { addItemFavorites } from "store";
 import {
   BackGround,
   Button,
@@ -40,6 +41,14 @@ export const BookDetails = ({
 }: IProps) => {
   const [isActive, setIsActive] = useToggle();
   const dispatch = useAppDispatch();
+  const addFavorite = () => {
+    dispatch(addItemFavorites(book));
+  };
+  const { item } = useAppSelector(getFavorites);
+
+  const isFavorite = Boolean(
+    item.find((bookFav) => book.isbn13 === bookFav.isbn13)
+  );
 
   return (
     <>
@@ -112,7 +121,9 @@ export const BookDetails = ({
               </Options>
               <ButtonContainer>
                 <Button>Add to Cart</Button>
-                <ButtonAddFavorite>Add to favorites</ButtonAddFavorite>
+                <ButtonAddFavorite onClick={addFavorite}>
+                  {isFavorite ? "Add to favorites" : "Delete from favorites"}
+                </ButtonAddFavorite>
               </ButtonContainer>
             </Description>
           </DetailsContainer>

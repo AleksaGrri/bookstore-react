@@ -17,6 +17,7 @@ import { Raiting } from "./Raiting";
 import { BookDetails } from "./BookDetails";
 import { TabBar } from "./TabBar/TabBar";
 import { SliderCom } from "./Slider";
+import { FavoritesItem } from "./FavoritesItem";
 
 export {
   Account,
@@ -38,4 +39,5 @@ export {
   Subscribe,
   Raiting,
   Loader,
+  FavoritesItem,
 };

@@ -10,7 +10,7 @@ import {
   AccountPage,
   BookDetailsPage,
   CartPage,
-  FavoritePage,
+  FavoritesPage,
   HomePage,
   NotFoundPage,
   RegistrationPage,
@@ -29,7 +29,7 @@ export const AppRouter = createBrowserRouter(
         <Route index path={ROUTE.BOOK_DETAILS} element={<BookDetailsPage />} />
         <Route index path={ROUTE.ACCOUNT} element={<AccountPage />} />
         <Route index path={ROUTE.CART} element={<CartPage />} />
-        <Route index path={ROUTE.FAVORITES} element={<FavoritePage />} />
+        <Route index path={ROUTE.FAVORITES} element={<FavoritesPage />} />
         <Route index path={ROUTE.REGISTRATION} element={<RegistrationPage />} />
         <Route index path={ROUTE.SIGNIN} element={<SigInPage />} />
         <Route

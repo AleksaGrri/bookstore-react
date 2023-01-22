@@ -3,6 +3,7 @@ import newBooksReducer from "./slices/newBooksSlice";
 import bookDetailsReducer from "./slices/bookDetailsSlice";
 import favoritesDetailsReducer from "./slices/favoritesSlice";
 import cartReducer from "./slices/cartSlice";
+import searchReducer from "./slices/searchSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     bookDetails: bookDetailsReducer,
     favorites: favoritesDetailsReducer,
     cart: cartReducer,
+    search: searchReducer,
   },
 });
 

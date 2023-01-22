@@ -8,6 +8,7 @@ import { ReactComponent as ArrowLeft } from "./icons/arrowLeft.svg";
 
 import FavoritesImage from "./images/favor.png";
 import EmptyCartIcon from "./images/empty-cart.png";
+import NotFoundImage from "./images/404-bg.svg";
 
 export {
   BookstoreIcon,
@@ -19,4 +20,5 @@ export {
   ArrowLeft,
   FavoritesImage,
   EmptyCartIcon,
+  NotFoundImage,
 };

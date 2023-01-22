@@ -19,6 +19,7 @@ import { TabBar } from "./TabBar/TabBar";
 import { SliderCom } from "./Slider";
 import { FavoritesItem } from "./FavoritesItem";
 import { Cart } from "./Cart";
+import { NotFounded } from "./NotFounded";
 
 export {
   Account,
@@ -42,4 +43,5 @@ export {
   Loader,
   FavoritesItem,
   Cart,
+  NotFounded,
 };

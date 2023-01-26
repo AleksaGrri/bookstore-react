@@ -11,6 +11,8 @@ import { clearCart } from "./slices";
 import { removeItem } from "./slices";
 import { getSearch } from "./selectors";
 import { decrementPage } from "./slices";
+import { setUser, removeUser } from "./slices";
+import { getUserInfo } from "./selectors";
 
 export {
   getNewBooks,
@@ -26,5 +28,8 @@ export {
   clearCart,
   getSearch,
   decrementPage,
+  setUser,
+  getUserInfo,
+  removeUser,
 };
 export type { AppDispatch, RootState };

@@ -4,11 +4,15 @@ import { NotFoundImage } from "assets";
 
 export const NotFoundStyled = styled.div`
   width: 1120px;
-  height: 100vh;
   margin: 0 auto;
+  background-image: url(${NotFoundImage});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 `;
 export const Title = styled.h1`
   padding-top: 150px;
+  opacity: 0;
   font-size: 120px;
   font-family: "Oswald", sans-serif;
   color: ${Color.PrimaryDark};

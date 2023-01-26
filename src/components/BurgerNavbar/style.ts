@@ -2,6 +2,13 @@ import styled from "styled-components";
 import { IBookDetails } from "types";
 import { Color } from "ui";
 
+interface ICart {
+  cart: IBookDetails[];
+}
+interface Ifavorites {
+  item: IBookDetails[];
+}
+
 export const StyledBurgerNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -17,19 +24,20 @@ export const Navbar = styled.nav`
   align-items: center;
   width: 184px;
 `;
-export const HeartLogo = styled.div`
+export const HeartLogo = styled.div<Ifavorites>`
   cursor: pointer;
-  stroke: ${Color.PrimaryDark};
+
+  stroke: ${({ item }) => (item.length > 0 ? "red" : `${Color.PrimaryDark}`)};
 
   :hover {
     stroke: goldenrod;
     transition: all 0.5s;
   }
 `;
-export const CartLogo = styled.div`
+export const CartLogo = styled.div<ICart>`
   width: 24px;
   height: 24px;
-  stroke: ${Color.PrimaryDark};
+  stroke: ${({ cart }) => (cart.length > 0 ? "red" : `${Color.PrimaryDark}`)};
   cursor: pointer;
 
   :hover {
@@ -47,4 +55,16 @@ export const UserLogo = styled.div`
     stroke: goldenrod;
     transition: all 0.5s;
   }
+`;
+
+export const Count = styled.div`
+  position: absolute;
+  top: 24px;
+  background-color: goldenrod;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
 `;

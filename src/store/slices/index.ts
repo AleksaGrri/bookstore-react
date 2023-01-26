@@ -4,6 +4,12 @@ import { addItemFavorites } from "./favoritesSlice";
 import { clearCart } from "./cartSlice";
 import { removeItem } from "./cartSlice";
 import { decrementPage } from "./searchSlice";
+import {
+  setUser,
+  removeUser,
+  setThemesDark,
+  setThemesLight,
+} from "./userSlice";
 
 export {
   fetchNewBooks,
@@ -12,4 +18,8 @@ export {
   clearCart,
   removeItem,
   decrementPage,
+  setUser,
+  removeUser,
+  setThemesDark,
+  setThemesLight,
 };

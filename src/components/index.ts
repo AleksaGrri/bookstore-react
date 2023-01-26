@@ -20,6 +20,11 @@ import { SliderCom } from "./Slider";
 import { FavoritesItem } from "./FavoritesItem";
 import { Cart } from "./Cart";
 import { NotFounded } from "./NotFounded";
+import { ModalWindow } from "./ModalWindow";
+import { SignIn } from "./SignIn";
+import { SignUp } from "./SignUp";
+import { ResetPassword } from "./ResetPassword";
+import { RequareAuth } from "./RequareAuth";
 
 export {
   Account,
@@ -44,4 +49,9 @@ export {
   FavoritesItem,
   Cart,
   NotFounded,
+  ModalWindow,
+  SignIn,
+  SignUp,
+  ResetPassword,
+  RequareAuth,
 };

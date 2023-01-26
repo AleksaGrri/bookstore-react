@@ -1,3 +1,4 @@
+import { useAuth } from "hooks";
 import { LogOut } from "../LogOut";
 import {
   BoldSubtitle,
@@ -9,6 +10,8 @@ import {
 } from "./style";
 
 export const Account = () => {
+  const { userDate, id, email } = useAuth();
+
   return (
     <StyledAccount>
       <Container>
@@ -16,14 +19,14 @@ export const Account = () => {
         <Description>
           <SubTitle>
             Your email upon registration:
-            <BoldSubtitle></BoldSubtitle>
+            <BoldSubtitle>{email}</BoldSubtitle>
           </SubTitle>
           <SubTitle>
             Unique number assigned to you:
-            <BoldSubtitle></BoldSubtitle>
+            <BoldSubtitle>{id}</BoldSubtitle>
           </SubTitle>
           <SubTitle>
-            Date of your registration: <BoldSubtitle></BoldSubtitle>
+            Date of your registration: <BoldSubtitle>{userDate}</BoldSubtitle>
           </SubTitle>
         </Description>
         <LogOut />

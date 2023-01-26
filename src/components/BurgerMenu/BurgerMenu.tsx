@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useWindowSize } from "hooks";
+import { RightNav } from "../BurgerRightNav";
 import { StyledBurger } from "./style";
 
 export const BurgerMenu = () => {
@@ -22,6 +23,7 @@ export const BurgerMenu = () => {
             <div></div>
             <div></div>
           </StyledBurger>
+          <RightNav open={isOpen} close={handleClose} />
         </>
       )}
     </>

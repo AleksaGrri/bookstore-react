@@ -1,5 +1,13 @@
-import React from "react";
+import { ArrowBack, ResetPassword } from "components";
+import { StyledReset } from "./style";
 
 export const ResetPasswordPage = () => {
-  return <div>ResetPasswordPage</div>;
+  return (
+    <>
+      <ArrowBack />
+      <StyledReset>
+        <ResetPassword />
+      </StyledReset>
+    </>
+  );
 };

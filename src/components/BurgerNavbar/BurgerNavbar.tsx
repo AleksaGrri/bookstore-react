@@ -7,11 +7,13 @@ import {
 } from "assets";
 import { useWindowSize } from "hooks";
 import { ROUTE } from "router";
-import { BurgerMenu } from "components/BurgerMenu";
-import { Search } from "components/Search";
-import { TogglerTheme } from "components/TogglerTheme";
+import { getCart, getFavorites, useAppSelector } from "store";
+import { BurgerMenu } from "../BurgerMenu";
+import { Search } from "../Search";
+import { TogglerTheme } from "../TogglerTheme";
 import {
   CartLogo,
+  Count,
   HeartLogo,
   Logo,
   Navbar,
@@ -20,6 +22,9 @@ import {
 } from "./style";
 
 export const BurgerNavbar = () => {
+  const { item } = useAppSelector(getFavorites);
+  const { cart } = useAppSelector(getCart);
+
   const { width = 0 } = useWindowSize();
 
   return (
@@ -35,12 +40,13 @@ export const BurgerNavbar = () => {
           <TogglerTheme />
           <Navbar>
             <Link to={ROUTE.FAVORITES}>
-              <HeartLogo>
+              <HeartLogo item={item}>
                 <HeartHeaderIcon />
               </HeartLogo>
             </Link>
             <Link to={ROUTE.CART}>
-              <CartLogo>
+              <CartLogo cart={cart}>
+                {cart.length > 0 && <Count>{cart.length}</Count>}
                 <CartHeaderIcon />
               </CartLogo>
             </Link>

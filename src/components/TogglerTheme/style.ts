@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Color } from "ui";
+import { motion } from "framer-motion";
 
 interface IButtonTheme {
   title: string;
@@ -16,7 +17,7 @@ export const StyledToggler = styled.div`
   }
 `;
 
-export const ButtonTheme = styled.button<IButtonTheme>`
+export const ButtonTheme = styled(motion.button)<IButtonTheme>`
   background: black;
   color: white;
   border-color: white;

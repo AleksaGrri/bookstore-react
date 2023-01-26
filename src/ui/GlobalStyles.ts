@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { Color } from "./color";
+import { Theme } from "./theme";
 
 export const GlobalStyles = createGlobalStyle`
     html, body, body div, span, 
@@ -17,10 +18,14 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: normal;
         vertical-align: baseline;
         color: ${Color.Primary};
+        background: ${Color.Backround};
         font-family: 'Source Sans Pro', sans-serif;
         :focus-visible {
         outline: none;
     }   
+    body{
+        background: ${Color.Backround};
+    }
     }
     article, aside, figure, footer, header, nav, section, details, summary {
         display: block;
@@ -96,5 +101,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     button,
     input[type=button] {width: auto; overflow: visible;}
+    ${Theme}
     
 `;

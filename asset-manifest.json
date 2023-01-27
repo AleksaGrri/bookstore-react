@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bookstore-react/static/css/main.4e80751b.css",
+    "main.js": "/bookstore-react/static/js/main.1136ca41.js",
+    "static/media/404-bg.svg": "/bookstore-react/static/media/404-bg.2e7743b48849692b4714036c67310af9.svg",
+    "static/media/bookstore.svg": "/bookstore-react/static/media/bookstore.4340e88f07199e1aaf0af79ef9a47221.svg",
+    "static/media/slick.svg": "/bookstore-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/bookstore-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/bookstore-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/bookstore-react/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/arrowLeft.svg": "/bookstore-react/static/media/arrowLeft.b315f0d68bcde4649daca47b3bd7f372.svg",
+    "static/media/heartHeader.svg": "/bookstore-react/static/media/heartHeader.318d2e32faba87be15b06829833836be.svg",
+    "static/media/closed.svg": "/bookstore-react/static/media/closed.345978f7261c770664347fc6e09b7270.svg",
+    "static/media/cartHeader.svg": "/bookstore-react/static/media/cartHeader.7eb730e15f3b45ebc5f727175a0facc8.svg",
+    "index.html": "/bookstore-react/index.html",
+    "static/media/search.svg": "/bookstore-react/static/media/search.25027e0c3e7c167be95a72d481fbcf41.svg",
+    "static/media/userHeader.svg": "/bookstore-react/static/media/userHeader.04df3946a67742229cab09f1b9802097.svg",
+    "main.4e80751b.css.map": "/bookstore-react/static/css/main.4e80751b.css.map",
+    "main.1136ca41.js.map": "/bookstore-react/static/js/main.1136ca41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e80751b.css",
+    "static/js/main.1136ca41.js"
+  ]
+}
